@@ -1,6 +1,17 @@
 # Device research matrix
 
-All devices are **not yet validated**. No boot, driver, or feature support is claimed.
+All four devices remain project targets. The maintainer currently has physical access only to the Moto G60 Vision XT2135-2; the other three are community/remote-validation targets until test hardware or volunteer testers are available. No iOS/XNU boot, driver, or feature support is claimed for any device.
+
+## Hardware access and validation
+
+| Device | Physical access for this project | What can be done now | What must wait for device testing |
+|---|---|---|---|
+| Moto G60 Vision XT2135-2 | Available to maintainer | Inspect exact build properties, research sources, perform carefully scoped non-destructive checks | Any boot or hardware-support claim still needs evidence |
+| Redmi Note 13 Pro 5G | Not currently available | Source research, configuration design, build analysis | Hardware bring-up, boot tests, peripheral validation |
+| POCO X5 Pro 5G | Not currently available | Source research, configuration design, build analysis | Hardware bring-up, boot tests, peripheral validation |
+| Redmi Note 10 Pro | Not currently available | Source research, configuration design, build analysis | Hardware bring-up, boot tests, peripheral validation |
+
+A project target is not the same as a supported device. For devices without local hardware, mark work as **research-only** until a volunteer with the exact model can run and share reproducible tests. Never mark such a device boot-tested or verified based only on source availability or another device's results.
 
 ## Preliminary hardware identity research
 
@@ -21,6 +32,8 @@ These are research leads from public references, not confirmation of the physica
 - Redmi Note 10 Pro India variants use the `sweetin` family, while the global/other regional 4G Pro variants use `sweet`. The China Redmi Note 10 Pro 5G (`chopin`) is a different device and must not be mixed into this row.
 
 ## Public reference leads
+
+Xiaomi's public kernel-source index lists device branches for `garnet` (Redmi Note 13 Pro), `redwood` (POCO X5 Pro 5G), and `sweet` (Redmi Note 10 Pro). These are Android kernel source leads, not ready-made XNU ports and not proof of iOS compatibility: [Xiaomi kernel source mirror](https://gitlab.com/MiCode-mirror/xiaomi_kernel_opensource). The `redwood-s-oss` branch explicitly lists POCO X5 Pro 5G; `sweet-r-oss` lists Redmi Note 10 Pro. [Source index details](https://gitextract.com/MiCode/Xiaomi_Kernel_OpenSource).
 
 - Motorola support lists XT2135-1 as Moto G60 and XT2135-2 as Moto G60 Vision: https://en-gb.support.motorola.com/app/answers/detail/a_id/167829/~/declarations-of-conformity
 - Motorola G40 Fusion/G60 device-tree reference identifies `hanoip` and Snapdragon 732G: https://github.com/bhawesh2002/android_device_motorola_hanoip
