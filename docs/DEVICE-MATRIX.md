@@ -53,7 +53,7 @@ The actual model number is the deciding evidence. Moto G60 XT2135-2 is distingui
 
 Before any development work, record the following from the stock system. Do not share IMEI, serial number, phone number, account details, or other unique identifiers.
 
-- [ ] Android version.
+- [x] Android version: Android 12 (user-reported).
 - [ ] Full software/build number.
 - [ ] Android security update date.
 - [ ] Build fingerprint (review for personal identifiers before sharing).
