@@ -57,7 +57,7 @@ Before any development work, record the following from the stock system. Do not 
 - [x] Full software/build number: `S2RIS32.32-20-9-9-2-3` (user-reported).
 - [x] Android security update date: 2023-11-01 (user-reported).
 - [ ] Build fingerprint (review for personal identifiers before sharing).
-- [ ] Kernel version as displayed in Settings, if available.
+- [x] Kernel version as displayed in Settings: `4.14.190-perf+` (user-reported).
 - [ ] Confirm model remains XT2135-2.
 
 Initial inspection should be read-only. No bootloader unlocking, flashing, partition writes, firmware replacement, or factory reset is part of this baseline step.
