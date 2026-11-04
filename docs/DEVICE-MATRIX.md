@@ -55,7 +55,7 @@ Before any development work, record the following from the stock system. Do not 
 
 - [x] Android version: Android 12 (user-reported).
 - [x] Full software/build number: `S2RIS32.32-20-9-9-2-3` (user-reported).
-- [ ] Android security update date.
+- [x] Android security update date: 2023-11-01 (user-reported).
 - [ ] Build fingerprint (review for personal identifiers before sharing).
 - [ ] Kernel version as displayed in Settings, if available.
 - [ ] Confirm model remains XT2135-2.
