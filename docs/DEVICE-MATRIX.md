@@ -8,7 +8,7 @@ These are research leads from public references, not confirmation of the physica
 
 | Target | Known model identifiers | Likely codename | SoC / GPU | Research status |
 |---|---|---|---|---|
-| Motorola Moto G60 | XT2135-1; XT2135-2 is listed as Moto G60 Vision by Motorola support | `hanoip` (shared device family with Moto G40 Fusion) | Snapdragon 732G / Adreno 618 | Provisional; exact variant needed |
+| Motorola Moto G60 (user-confirmed XT2135-2) | **XT2135-2**; Motorola's EU declaration labels it **moto g60 vision** (type MC38C) | `hanoip` (device-family lead; confirm against on-device build properties) | Snapdragon 732G / Adreno 618 (provisional) | Model confirmed; platform details provisional |
 | Redmi Note 13 Pro 5G | 2312DRA50G (Global); 2312DRA50C (China) | `garnet` | Snapdragon 7s Gen 2 / Adreno 710 | Provisional; confirm region/model |
 | POCO X5 Pro 5G | 22101320G (Global); 22101320I (India) | `redwood` | Snapdragon 778G / Adreno 642L | Provisional; confirm region/model |
 | Redmi Note 10 Pro | M2101K6G (Global); M2101K6T (Thailand); M2101K6R (Japan); India M2101K6P is commonly identified as `sweetin`; M2101K6I is Note 10 Pro Max India | `sweet` for global family; `sweetin` for India family | Snapdragon 732G / Adreno 618 for the 4G Pro family | Provisional; exact variant needed |
@@ -34,13 +34,14 @@ These are research leads from public references, not confirmation of the physica
 
 For each handset, record the full model number from **Settings → About phone** (or the model label in its regulatory information). Also record the marketed device name and region if shown. Do not post IMEI, serial number, phone number, account details, or other unique identifiers.
 
-The actual model number is the deciding evidence. A codename inferred from the retail name alone is not enough to select a kernel tree or device configuration.
+The actual model number is the deciding evidence. Moto G60 XT2135-2 is distinguished here from XT2135-1; Motorola's own support listing calls XT2135-2 the moto g60 vision, while XT2135-1 is listed as moto g60. The `hanoip` codename and Snapdragon 732G/Adreno 618 identification remain research leads to verify against the actual device's build properties and authoritative source trees. A codename inferred from the retail name alone is not enough to select a kernel tree or device configuration.
 
 ## Per-device checklist
 
 Complete this independently for every exact model variant.
 
-- [ ] Confirm commercial model and full model number from the actual device.
+- [x] Moto G60: user confirmed model number XT2135-2. Motorola's regulatory declaration identifies this SKU as moto g60 vision, type MC38C. [Official declaration](https://en-us.support.motorola.com/ci/fattach/get/79315385/1664922506/redirect/1/filename/XT2135-2_Moto%2BG60%2BVision%2BMC38C%2BRED%2BDoC.pdf)
+- [ ] Confirm the remaining devices' commercial model and full model numbers from the actual devices.
 - [ ] Confirm codename, SoC, board identifier, and hardware revision against device-specific sources.
 - [ ] Record bootloader and boot-environment constraints from authoritative sources.
 - [ ] Locate public kernel and device-tree sources; record immutable revisions and licenses.
