@@ -6,7 +6,7 @@ All four devices remain project targets. The maintainer currently has physical a
 
 | Device | Physical access for this project | What can be done now | What must wait for device testing |
 |---|---|---|---|
-| Moto G60 Vision XT2135-2 | Available to maintainer | Inspect exact build properties, research sources, perform carefully scoped non-destructive checks | Any boot or hardware-support claim still needs evidence |
+| Moto G60 Vision XT2135-2 | Available to maintainer; user reports original Motorola Android software (stock ROM) | Record Android/build fingerprint and inspect read-only device properties; research sources | Any boot or hardware-support claim still needs evidence |
 | Redmi Note 13 Pro 5G | Not currently available | Source research, configuration design, build analysis | Hardware bring-up, boot tests, peripheral validation |
 | POCO X5 Pro 5G | Not currently available | Source research, configuration design, build analysis | Hardware bring-up, boot tests, peripheral validation |
 | Redmi Note 10 Pro | Not currently available | Source research, configuration design, build analysis | Hardware bring-up, boot tests, peripheral validation |
@@ -48,6 +48,19 @@ Xiaomi's public kernel-source index lists device branches for `garnet` (Redmi No
 For each handset, record the full model number from **Settings → About phone** (or the model label in its regulatory information). Also record the marketed device name and region if shown. Do not post IMEI, serial number, phone number, account details, or other unique identifiers.
 
 The actual model number is the deciding evidence. Moto G60 XT2135-2 is distinguished here from XT2135-1; Motorola's own support listing calls XT2135-2 the moto g60 vision, while XT2135-1 is listed as moto g60. The `hanoip` codename and Snapdragon 732G/Adreno 618 identification remain research leads to verify against the actual device's build properties and authoritative source trees. A codename inferred from the retail name alone is not enough to select a kernel tree or device configuration.
+
+## Moto G60 Vision baseline capture
+
+Before any development work, record the following from the stock system. Do not share IMEI, serial number, phone number, account details, or other unique identifiers.
+
+- [ ] Android version.
+- [ ] Full software/build number.
+- [ ] Android security update date.
+- [ ] Build fingerprint (review for personal identifiers before sharing).
+- [ ] Kernel version as displayed in Settings, if available.
+- [ ] Confirm model remains XT2135-2.
+
+Initial inspection should be read-only. No bootloader unlocking, flashing, partition writes, firmware replacement, or factory reset is part of this baseline step.
 
 ## Per-device checklist
 
